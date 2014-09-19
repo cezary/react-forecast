@@ -1,0 +1,47 @@
+{
+  "name": "react-forecast",
+  "version": "0.0.1",
+  "description": "forecast component for React",
+  "main": "dist/forecast.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cezary/react-forecast.git"
+  },
+  "keywords": [
+    "forecast",
+    "weather",
+    "react"
+  ],
+  "scripts": {
+    "build": "coffee -o dist/ -cw src/*",
+    "test": "jest"
+  },
+  "author": "Cezary Wojtkowski",
+  "license": "MIT",
+  "dependencies": {
+    "react": "*",
+    "react-tools": "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "jest-cli": "^0.1.18"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testFileExtensions": [
+      "coffee",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "coffee",
+      "litcoffee",
+      "coffee.md"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}
+
