@@ -1,17 +1,30 @@
-# React-forecast
+# react-forecast
 
 A forecast component for React powered by Forecast.io.
 
-#### Usage
+## Installation
 
+```bash
+npm install react-forecast --save
 ```
-    var Forecast = require('react-forecast')
 
-    Forecast({
-      latitude:34.05,
-      longitude:118.25,
-      name:'Los Angeles'
-    })
+## Demo
+
+http://cezary.github.io/react-forecast/
+
+## Usage
+
+```javascript
+var React = require('react');
+var Forecast = require('react-forecast');
+
+var Component = React.createClass({
+  render: function() {
+    return (
+      <Forecast latitude={34.05} longitude{118.25} name='Los Angeles' />
+    );
+  }
+});
 ```
 
 **latitude** *number*, **longitude** *number*

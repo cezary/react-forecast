@@ -1,8 +1,11 @@
 {
   "name": "react-forecast",
-  "version": "0.0.1",
-  "description": "forecast component for React",
-  "main": "dist/forecast.js",
+  "version": "0.0.3",
+  "description": "A forecast component for React",
+  "main": "lib/react-forecast.js",
+  "scripts": {
+    "start": "script/build"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:cezary/react-forecast.git"
@@ -10,38 +13,23 @@
   "keywords": [
     "forecast",
     "weather",
-    "react"
+    "react",
+    "react-component"
   ],
-  "scripts": {
-    "build": "coffee -o dist/ -cw src/*",
-    "test": "jest"
-  },
   "author": "Cezary Wojtkowski",
   "license": "MIT",
-  "dependencies": {
-    "react": "*",
-    "react-tools": "*"
+  "bugs": {
+    "url": "https://github.com/cezary/react-forecast/issues"
+  },
+  "homepage": "https://github.com/cezary/react-forecast",
+  "peerDependencies": {
+    "react": "^0.12.0"
   },
   "devDependencies": {
-    "coffee-script": "*",
-    "jest-cli": "^0.1.18"
-  },
-  "jest": {
-    "scriptPreprocessor": "<rootDir>/preprocessor.js",
-    "testFileExtensions": [
-      "coffee",
-      "js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "coffee",
-      "litcoffee",
-      "coffee.md"
-    ],
-    "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/react"
-    ]
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.3.2-beta8",
+    "webpack-dev-server": "^1.4.7",
+    "reactify": "^0.17.0",
+    "uglify-js": "^2.4.15"
   }
 }
-
