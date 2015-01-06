@@ -66,16 +66,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = React.createClass({
 	  displayName: 'Forecast',
 	
+	  getDefaultProps: function() {
+	    return {
+	      height: 245,
+	      width: '100%'
+	    };
+	  },
+	
 	  render: function() {
 	    var url = "http://forecast.io/embed/#lat=" + this.props.latitude +
 	                "&lon=" + this.props.longitude +
 	                "&name=" + this.props.name || '' +
 	                "&color=" + this.props.color || '' +
 	                "&font=" + this.props.font || '' +
-	                "&unites=" + this.props.unit || '';
+	                "&units=" + this.props.unit || '';
 	
 	    return (
-	      React.createElement("iframe", {type: "text/html", height: "245", width: "100%", frameBorder: "0", src: url})
+	      React.createElement("iframe", {type: "text/html", height: this.props.height, width: this.props.width, frameBorder: "0", src: url})
 	    );
 	  }
 	});
