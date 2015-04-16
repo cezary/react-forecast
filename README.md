@@ -21,7 +21,7 @@ var Forecast = require('react-forecast');
 var Component = React.createClass({
   render: function() {
     return (
-      <Forecast latitude={34.05} longitude{118.25} name='Los Angeles' />
+      <Forecast latitude={34.05} longitude={118.25} name='Los Angeles' />
     );
   }
 });
