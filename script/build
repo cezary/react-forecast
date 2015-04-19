@@ -1,8 +1,0 @@
-#!/bin/sh
-webpack --devtool source-map
-
-node_modules/.bin/uglifyjs dist/react-forecast.js \
-  --output dist/react-forecast.min.js \
-  --source-map dist/react-forecast.min.map \
-  --source-map-url react-forecast.min.map \
-  --compress warnings=false

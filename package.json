@@ -1,20 +1,19 @@
 {
   "name": "react-forecast",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A forecast component for React",
-  "main": "lib/react-forecast.js",
+  "main": "dist/react-forecast.js",
   "scripts": {
-    "start": "script/build"
+    "build": "./node_modules/.bin/babel lib/react-forecast.js > dist/react-forecast.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:cezary/react-forecast.git"
   },
   "keywords": [
-    "forecast",
-    "weather",
     "react",
-    "react-component"
+    "weather",
+    "forecast"
   ],
   "author": "Cezary Wojtkowski",
   "license": "MIT",
@@ -26,10 +25,6 @@
     "react": "^0.12.0"
   },
   "devDependencies": {
-    "jsx-loader": "^0.12.2",
-    "webpack": "^1.3.2-beta8",
-    "webpack-dev-server": "^1.4.7",
-    "reactify": "^0.17.0",
-    "uglify-js": "^2.4.15"
+    "babel": "^5.1.10"
   }
 }
