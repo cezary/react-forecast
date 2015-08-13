@@ -21,8 +21,8 @@
     "url": "https://github.com/cezary/react-forecast/issues"
   },
   "homepage": "https://github.com/cezary/react-forecast",
-  "peerDependencies": {
-    "react": "^0.12.0"
+  "dependencies": {
+    "react": "0.13.3"
   },
   "devDependencies": {
     "babel": "^5.1.10"
