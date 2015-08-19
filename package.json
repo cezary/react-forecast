@@ -1,6 +1,6 @@
 {
   "name": "react-forecast",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A forecast component for React",
   "main": "dist/react-forecast.js",
   "scripts": {
@@ -21,8 +21,8 @@
     "url": "https://github.com/cezary/react-forecast/issues"
   },
   "homepage": "https://github.com/cezary/react-forecast",
-  "dependencies": {
-    "react": "0.13.3"
+  "peerDependencies": {
+    "react": "^0.13.0"
   },
   "devDependencies": {
     "babel": "^5.1.10"
