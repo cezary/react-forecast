@@ -1,6 +1,6 @@
 {
   "name": "react-forecast",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A forecast component for React",
   "main": "dist/react-forecast.js",
   "scripts": {
