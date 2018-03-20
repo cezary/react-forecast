@@ -1,8 +1,9 @@
 'use strict';
 
 var React = require('react');
+var createReactClass = require('create-react-class');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   displayName: 'Forecast',
 
   getDefaultProps: function getDefaultProps() {
